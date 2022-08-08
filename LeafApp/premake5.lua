@@ -18,11 +18,11 @@ project "LeafApp"
 
 	includedirs {
 		"%{wks.location}/Leaf/Leaf/src",
-		"%{IncludeDir.GLFW}",
-		"%{IncludeDir.ImGui}",
-		"%{IncludeDir.glm}",
+		"%{wks.location}/Leaf/vendor/GLFW/include",
+		"%{wks.location}/Leaf/vendor/imgui",
+		"%{wks.location}/Leaf/vendor/glm",
+		"%{wks.location}/Leaf/vendor/stb_image",
 		"%{IncludeDir.VulkanSDK}",
-		"%{IncludeDir.stb_image}",
 	}
 
 	links {
